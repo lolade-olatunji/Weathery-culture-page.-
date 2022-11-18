@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap');
+
+.cont{
+    width: 100%;
+}
+.subhead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: outfit;
+    color: #272A2E;
+}
+.nav-col1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: 500;
+    font-family: outfit;
+}
+.btn1{
+    margin-right: 30px;
+    font-size: 13px;
+}
+.btn2{
+    box-sizing: border-box;
+    padding: 10px 20px 23px 20px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #EF6820;
+    background-color: #EF6820;
+    color: #fff;
+    font-size: 11px;
+    font-family: 'outfit';
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: #B93815;
+    border: 1px solid #B93815;
+}
+.btn2:active{
+    transform: scale(0.98);
+  }
+  .menu .hamburger {
+    font-size:20px;
+    color: #B93815;
+    cursor: pointer;
+    display: none;
+  }
+  .modal {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    box-shadow: 2px 3px 58px -13px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 10px 30px 110px 30px;
+    line-height: 30px;
+  }
+  .modal ul{
+    list-style-type: none;
+    padding: 0px;
+    font-weight: 600;
+}
+.modal li{
+      font-family: "outfit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      color: #434343;
+      margin-bottom: 15px;
+      text-decoration: none;
+}
+.modal ul li:hover{
+    color: #B93815;
+}
+
+
+@media screen and (max-width: 930px) {
+    .nav-list{
+        display: none;
+    }
+    .btn1{
+        display: none;
+    }
+    .menu .hamburger {
+        display: block;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .btn2{
+        display: none;
+    }
+}
